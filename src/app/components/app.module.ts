@@ -28,7 +28,7 @@ import { ExampleTwoComponent } from './app/exampleTwo/exampleTwo.component';
       {path: "header", component: HeaderComponent}, //different pages
       {path: "footer", component: FooterComponent}, //different pages
       {path: "example", component: ExampleComponent},
-      {path: "exampletwo", component: ExampleTwoComponent},
+      {path: "exampletwo", component: ExampleTwoComponent}
 
     ])
   ],
