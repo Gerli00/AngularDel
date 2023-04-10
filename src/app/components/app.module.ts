@@ -3,12 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
-import { AppComponent } from './components/app/app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { SimplePageComponent } from './components/simple-page/simple-page.component';
-import { ExampleComponent } from './components/app/example/example.component';
-import { ExampleTwoComponent } from './components/app/exampleTwo/exampleTwo.component';
+import { AppComponent } from './app/app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { SimplePageComponent } from './simple-page/simple-page.component';
+import { ExampleComponent } from './app/example/example.component';
+import { ExampleTwoComponent } from './app/exampleTwo/exampleTwo.component';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ExampleTwoComponent } from './components/app/exampleTwo/exampleTwo.comp
       {path: "header", component: HeaderComponent}, //different pages
       {path: "footer", component: FooterComponent}, //different pages
       {path: "example", component: ExampleComponent},
-      {path: "exampleTwo", component: ExampleTwoComponent}
+      {path: "exampletwo", component: ExampleTwoComponent},
+
     ])
   ],
   providers: [],
