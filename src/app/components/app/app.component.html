@@ -1,8 +1,19 @@
 
 <link rel="icon" type="image/x-icon" href="favicon.ico">
-<app-header></app-header>
-<p class="main"> Hello world!</p>
-<button>Start</button>
-<button>Stop</button>
-<app-footer></app-footer>
+<!-- <app-header></app-header>
+<div>
+  <p class="main"> Hello world!</p>
+  <button (click)="onClick()">Start</button>
+  <button (click)="onClick()">Stop</button>
+  <input [(ngModel)] = "text">
+  <br>
+  <label *ngIf="MessageShown">{{text}}</label>
+  <button class="btn btn-danger" (click)="toggleMessage">Show message!</button>
+  <br>
+  <p>{{text}}</p>
+
+</div> -->
+<app-simple-page></app-simple-page>
+<router-outlet></router-outlet>
+<!-- <app-footer></app-footer> -->
 

@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="simple-page.component.css">
+<p>BMI Calculator works!</p>
+
+<div class="container">
+  <h2> BMI Calculator</h2>
+  <form>
+    <div class="form-group">
+      <label for="weight">Weight <em>(kg)</em></label>
+      <input [(ngModel)]="weight" type="number" class="form-input" id="weight" name="weight" >
+    </div>
+    <div>
+      <label for="height">Height <em>(cm)</em></label>
+      <input [(ngModel)]="height" type="number" class="form-input" id="height" name="height" >
+    </div>
+    <button type="button" class="btn btn-primary" (click)="calculateBMI()">Calculate BMI</button>
+  </form>
+  <div *ngIf="bmi">
+    <h4> Your BMI is {{ bmi.toFixed(2) }} {{ (bmi <= 18.5 || bmi >24.9 ? '😔' : '😃') }}</h4>
+    <p>{{ getBMICategory() }}</p>
+  </div>
+</div>
+
